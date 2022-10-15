@@ -35,8 +35,6 @@ class NoteFragment : Fragment(R.layout.fragment_note), MenuProvider {
 
         activity?.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-
-
     }
 
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
