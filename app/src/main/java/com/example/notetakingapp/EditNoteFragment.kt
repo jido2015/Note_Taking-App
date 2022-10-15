@@ -6,12 +6,13 @@ import androidx.fragment.app.Fragment
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.navigation.findNavController
+import com.example.notetakingapp.databinding.FragmentEditNoteBinding
 import com.example.notetakingapp.databinding.FragmentNoteBinding
 
 
 class EditNoteFragment : Fragment() {
 
-    private var _binding: FragmentNoteBinding? = null
+    private var _binding: FragmentEditNoteBinding? = null
     private val binding get() = _binding!!
 
 
@@ -20,7 +21,7 @@ class EditNoteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding =  FragmentNoteBinding.inflate(inflater, container, false)
+        _binding =  FragmentEditNoteBinding.inflate(inflater, container, false)
 
         return binding.root
     }
